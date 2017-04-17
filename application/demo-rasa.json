@@ -1,0 +1,318 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      
+ 
+      {
+        "text": "Look for an A-Class Diesel", 
+        "intent": "car_search", 
+        "entities": [
+          {
+            "start": 12, 
+            "end": 13, 
+            "value": "A", 
+            "entity": "group"
+          }, 
+          {
+            "start": 20, 
+            "end": 26, 
+            "value": "Diesel",
+            "entity": "cartype"
+          }
+        ]
+      },
+      {
+        "text": "Search for an B-Class Diesel", 
+        "intent": "car_search", 
+        "entities": [
+          {
+            "start": 14, 
+            "end": 15, 
+            "value": "B", 
+            "entity": "group"
+          }, 
+          {
+            "start": 22, 
+            "end": 28, 
+            "value": "Diesel",
+            "entity": "cartype"
+          }
+        ]
+      },
+      {
+        "text": "Look for A300 CDI", 
+        "intent": "car_search", 
+        "entities": [
+          {
+            "start": 9, 
+            "end": 13, 
+            "value": "A300", 
+            "entity": "CarModel"
+          }, 
+          {
+            "start": 14, 
+            "end": 17, 
+            "value": "CDI",
+            "entity": "CarVariant"
+          }
+        ]
+      },
+      {
+        "text": "Find C180", 
+        "intent": "car_search", 
+        "entities": [
+          {
+            "start": 5, 
+            "end": 9, 
+            "value": "C180", 
+            "entity": "CarModel"
+          }
+        ]
+      },
+      {
+        "text": "Seek VITO Wagon", 
+        "intent": "car_search", 
+        "entities": [
+          {
+            "start": 5, 
+            "end": 9, 
+            "value": "VITO", 
+            "entity": "CarModel"
+          }, 
+          {
+            "start": 10, 
+            "end": 15, 
+            "value": "Wagon",
+            "entity": "CarVariant"
+          }
+        ]
+      },
+      {
+        "text": "Search C200 AVA", 
+        "intent": "car_search", 
+        "entities": [
+          {
+            "start": 7, 
+            "end": 11, 
+            "value": "C200", 
+            "entity": "CarModel"
+          }, 
+          {
+            "start": 12, 
+            "end": 15, 
+            "value": "AVA",
+            "entity": "CarType"
+          }
+        ]
+      },
+      {
+        "text": "Search C200 EX", 
+        "intent": "car_search", 
+        "entities": [
+          {
+            "start": 7, 
+            "end": 11, 
+            "value": "C200", 
+            "entity": "CarModel"
+          }, 
+          {
+            "start": 12, 
+            "end": 14, 
+            "value": "EX",
+            "entity": "CarType"
+          }
+        ]
+      },
+
+      {
+        "text": "Look for S400 Hybrid Sedan Long", 
+        "intent": "car_search", 
+        "entities": [
+          {
+            "start": 9, 
+            "end": 13, 
+            "value": "S400", 
+            "entity": "CarModel"
+          }, 
+          {
+            "start": 14, 
+            "end": 31, 
+            "value": "Hybrid Sedan Long",
+            "entity": "CarVariant"
+          }
+        ]
+      },
+      {
+        "text": "Find 110CDI VITO ", 
+        "intent": "car_search", 
+        "entities": [
+          {
+            "start": 12, 
+            "end": 16, 
+            "value": "VITO", 
+            "entity": "CarModel"
+          }, 
+          {
+            "start": 5, 
+            "end": 11, 
+            "value": "110CDI",
+            "entity": "CarVariant"
+          }
+        ]
+      },
+      {
+        "text": "Seek R350L RED", 
+        "intent": "car_search", 
+        "entities": [
+          {
+            "start": 5, 
+            "end": 10, 
+            "value": "R350L", 
+            "entity": "CarModel"
+          }, 
+          {
+            "start": 5, 
+            "end": 10, 
+            "value": "R350L",
+            "entity": "CarVariant"
+          }, 
+          {
+            "start": 11, 
+            "end": 14, 
+            "value": "RED",
+            "entity": "CarColor"
+          }
+        ]
+      },
+      {
+        "text": "Seek R350L BLUE", 
+        "intent": "car_search", 
+        "entities": [
+          {
+            "start": 5, 
+            "end": 10, 
+            "value": "R350L", 
+            "entity": "CarModel"
+          }, 
+          {
+            "start": 5, 
+            "end": 10, 
+            "value": "R350L",
+            "entity": "CarVariant"
+          }, 
+          {
+            "start": 11, 
+            "end": 15, 
+            "value": "BLUE",
+            "entity": "CarColor"
+          }
+        ]
+      },
+      {
+        "text": "Reserve for an A-Class Diesel", 
+        "intent": "car_reserve", 
+        "entities": [
+          {
+            "start": 15, 
+            "end": 16, 
+            "value": "A", 
+            "entity": "group"
+          }, 
+          {
+            "start": 23, 
+            "end": 29, 
+            "value": "Diesel",
+            "entity": "cartype"
+          }
+        ]
+      },
+
+      {
+        "text": "Reserve for A300 CDI", 
+        "intent": "car_reserve", 
+        "entities": [
+          {
+            "start": 12, 
+            "end": 16, 
+            "value": "A300", 
+            "entity": "CarModel"
+          }, 
+          {
+            "start": 17, 
+            "end": 20, 
+            "value": "CDI",
+            "entity": "CarVariant"
+          }
+        ]
+      },
+      {
+        "text": "Reserve C180", 
+        "intent": "car_reserve", 
+        "entities": [
+          {
+            "start": 8, 
+            "end": 12, 
+            "value": "C180", 
+            "entity": "CarModel"
+          }
+        ]
+      },
+      {
+        "text": "Seek C180 Wagon", 
+        "intent": "car_reserve", 
+        "entities": [
+          {
+            "start": 5, 
+            "end": 9, 
+            "value": "C180", 
+            "entity": "CarModel"
+          }, 
+          {
+            "start": 10, 
+            "end": 15, 
+            "value": "Wagon",
+            "entity": "CarVariant"
+          }
+        ]
+      },
+      {
+        "text": "Block C200 AVA", 
+        "intent": "car_reserve", 
+        "entities": [
+          {
+            "start": 6, 
+            "end": 10, 
+            "value": "C200", 
+            "entity": "CarModel"
+          }, 
+          {
+            "start": 11, 
+            "end": 14, 
+            "value": "AVA",
+            "entity": "CarType"
+          }
+        ]
+      },
+      {
+        "text": "Reserve C200 EX", 
+        "intent": "car_reserve", 
+        "entities": [
+          {
+            "start": 8, 
+            "end": 12, 
+            "value": "C200", 
+            "entity": "CarModel"
+          }, 
+          {
+            "start": 13, 
+            "end": 15, 
+            "value": "EX",
+            "entity": "CarType"
+          }
+        ]
+      }
+
+      
+    ]
+  }
+}

@@ -10,7 +10,9 @@ Step-by-step tutorial: https://medium.com/@rodkey/deploying-a-flask-application-
 from flask import Flask, render_template, request
 from application import db
 from application.models import Data
-from application.forms import EnterDBInfo, RetrieveDBInfo
+from application.forms import EnterDBInfo, RetrieveDBInfo, InputForm2
+from application.compute import compute,getNLP
+
 
 # Elastic Beanstalk initalization
 application = Flask(__name__)
@@ -46,6 +48,25 @@ def index():
         return render_template('results.html', results=query_db, num_return=num_return)                
     
     return render_template('index.html', form1=form1, form2=form2)
+
+
+@application.route('/nlptest', methods=['GET', 'POST'])
+def nlptest():
+    form = InputForm2(request.form)
+    print "request received in form"
+    print request.method
+
+    if request.method == 'POST':
+        r = form.r.data
+        print "data in form is "+r
+        s = getNLP(r)
+    else:
+        s = None
+
+    return render_template("view_nlp.html", form=form, s=s)
+
+
+
 
 if __name__ == '__main__':
     application.run(host='0.0.0.0')
